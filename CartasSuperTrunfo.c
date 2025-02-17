@@ -97,10 +97,10 @@ int main() {
     } else {
         printf("As duas cidades têm o mesmo PIB per capita: R$ %.2f\n", pibPerCapita1);
     }
-    if (densidade1 > densidade2) {
-        printf("A cidade com maior densidade demográfica é: %s (%.2f hab/km²)\n", cidade1.nome, densidade1);
-    } else if (densidade2 > densidade1) {
-        printf("A cidade com maior densidade demográfica é: %s (%.2f hab/km²)\n", cidade2.nome, densidade2);
+    if (densidade1 < densidade2) {
+        printf("A cidade com menor densidade demográfica é: %s (%.2f hab/km²)\n", cidade1.nome, densidade1);
+    } else if (densidade2 < densidade1) {
+        printf("A cidade com menor densidade demográfica é: %s (%.2f hab/km²)\n", cidade2.nome, densidade2);
     } else {
         printf("As duas cidades têm a mesma densidade demográfica: %.2f hab/km²\n", densidade1);
     }
